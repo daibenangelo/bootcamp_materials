@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bear Burger's - Order</title>
+    <style>
+      li.nav-item:hover {
+        background-color: magenta;
+      }
+
+      li.disabled:hover {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      thead {
+        background-color: rgb(255, 200, 99);
+      }
+      th.subh {
+        background-color: rgb(255, 229, 182);
+      }
+      #menu-footnote {
+        background-color: rgb(250, 238, 216);
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid lightgrey;
+        border-collapse: collapse;
+      }
+
+      td.item-row:hover {
+        background-color: orange;
+      }
+
+      tr.item-row:hover {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/161/161588.png"
+            style="width: 40px"
+            alt="restaurant logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#resto-navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="resto-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Order</a>
+            </li>
+            <li class="nav-item disabled">
+              <a class="nav-link disabled" tabindex="-1">Shop</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container mb-5 mt-5">
+      <div class="row">
+        <h1 class="display-1">Order Here!</h1>
+        <div class="col-lg-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Icons</th>
+                <th>Item Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center">
+                <th class="subh" colspan="3">Meals</th>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img src="item-burger.jpg" alt="burger" style="width: 40px" />
+                </td>
+                <td>Burger</td>
+                <td>₱55.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img
+                    src="item-chicken.jpg"
+                    alt="chicken"
+                    style="width: 40px"
+                  />
+                </td>
+                <td>Fried Chicken</td>
+                <td>₱55.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img
+                    src="item-spaghetti.jpg"
+                    alt="spaghetti"
+                    style="width: 40px"
+                  />
+                </td>
+                <td>Spaghetti</td>
+                <td>₱55.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img src="item-pizza.jpg" alt="pizza" style="width: 40px" />
+                </td>
+                <td>Pizza</td>
+                <td>₱150.00</td>
+              </tr>
+              <tr class="text-center">
+                <th class="subh" colspan="3">Drinks</th>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img src="item-coke.jpg" alt="coke" style="width: 40px" />
+                </td>
+                <td>Coke</td>
+                <td>₱20.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img src="item-sprite.jpg" alt="sprite" style="width: 40px" />
+                </td>
+                <td>Sprite</td>
+                <td>₱20.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img src="item-sarsi.jpg" alt="sarsi" style="width: 40px" />
+                </td>
+                <td>Sarsi</td>
+                <td>₱20.00</td>
+              </tr>
+              <tr>
+                <td colspan="2" rowspan="2" id="menu-footnote">
+                  All items are subject to tax. No refunds. All items are not
+                  transferrable.
+                </td>
+                <td class="item-row">Extra Rice - ₱20.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>Condiments - ₱20.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="https://www.dellacasapasta.com/images/basil-sauce.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <div style="background-color: black">
+      <div class="container text-light pt-5">
+        <h1 class="display-1">Tell Us What You Think!</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="https://thumbs.dreamstime.com/b/cucumber-burger-ingredients-floating-black-background-isolated-vertical-cucumber-burger-ingredients-floating-bun-cheese-tomato-177814997.jpg"
+              alt="vertical burger with ingredients spaced out"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label for="name">Name (optional):</label>
+                <input type="text" id="name" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="province">Province (optional):</label>
+                <input type="text" id="province" class="form-control" />
+              </div>
+              <div class="form-group mt-5">
+                <label>How many times have you went to our restaurant?</label
+                ><br />
+                <input type="radio" id="first_time" name="times_visited" />This
+                is the first time!<br />
+                <input
+                  type="radio"
+                  id="second_time"
+                  name="times_visited"
+                />Second time<br />
+                <input type="radio" id="third_more" name="times_visited" />Third
+                time or more
+              </div>
+              <div class="form-group mt-5">
+                <label>Howmany times have you went to our restaurant?</label
+                ><br />
+                <input type="radio" id="1" name="rating" />⭐<input
+                  type="radio"
+                  id="2"
+                  name="rating"
+                />⭐⭐<input type="radio" id="3" name="rating" />⭐⭐⭐<input
+                  type="radio"
+                  id="4"
+                  name="rating"
+                />⭐⭐⭐⭐<input type="radio" id="5" name="rating" />⭐⭐⭐⭐⭐
+              </div>
+              <div class="form-group mt-5">
+                <label>How would you rate the services?</label><br />
+                <input type="radio" id="1" name="rating" />⭐<input
+                  type="radio"
+                  id="2"
+                  name="rating"
+                />⭐⭐<input type="radio" id="3" name="rating" />⭐⭐⭐<input
+                  type="radio"
+                  id="4"
+                  name="rating"
+                />⭐⭐⭐⭐<input type="radio" id="5" name="rating" />⭐⭐⭐⭐⭐
+              </div>
+              <input type="submit" class="btn btn-primary mt-5" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row text-center mt-5">
+        <div class="col-lg-12"><p>dsanchez@gmail.com | 09123456789</p></div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-12 text-center">
+          <img src="soc-fb.png" style="height: 40px" />
+          <img src="soc-twitter.png" style="height: 40px" />
+          <img src="soc-insta.png" style="height: 40px" />
+          <img src="soc-linkedin.png" style="height: 40px" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
